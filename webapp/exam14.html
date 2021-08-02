@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Event</h1>
+	<h2>h2-1</h2>
+	<h2>h2-2</h2>
+	<h2>h2-3</h2>
+
+	<h3 class="tagh3">naver</h3>
+	<h3 class="tagh3">daum</h3>
+	<h3>licos</h3>
+	<h3>nate</h3>
+	<div>
+		<button id="btn">java script test button</button>
+		<p id="display">name print area</p>
+	</div>
+</body>
+
+<!-- 
+m = data(html tag)
+v = view(css)
+c = control(js)
+ -->
+
+<script type="text/javascript">
+	var testButton = document.getElementById("btn");
+	var testArea = document.getElementById("display");
+
+	var h2Arr = document.getElementsByTagName("h2");
+	var h3Arr = document.getElementsByClassName("tagh3");
+
+	console.log(h2Arr);
+	console.log(testArea);
+	testButton.onclick = function() {
+		testArea.innerHTML = "<font color=#d6d6d6>오준식</font>";
+	}
+
+	console.log(h2Arr[1]);
+
+	h2Arr[1].onclick = function() {
+		testArea.innerHTML = "공 유";
+	}
+	console.log(h3Arr);
+	
+	var adress = document.getElementsByTagName("h1");
+
+	h3Arr[1].onclick = function() {
+		adress[0].innerHTML = "https://www.daum.net";
+	}
+</script>
+
+</html>

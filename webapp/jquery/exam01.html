@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button id="btn">java script test button</button>
+		<p id="display">name print area</p>
+	</div>
+
+	<script type="text/javascript">
+		/*
+			window.onload = function() {
+				var testButton = document.getElementById("btn");
+
+				console.log(testButton);
+
+				var testArea = document.getElementById("display");
+
+				console.log(testArea);
+
+				//when btn clicked
+				testButton.onclick = function() {
+
+					console.log("btn clicked")
+
+					testArea.innerHTML = "<font color=#d6d6d6>오준식</font>";
+
+				}
+			};
+		 */
+		 
+		 $("#btn").on("click",function(){
+			 $("#display").html("hommer simson")
+			 
+		 });
+	</script>
+</body>
+
+
+
+</html>

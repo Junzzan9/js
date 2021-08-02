@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		//이름이 있는 함수 기명함수 
+		var plusSum = plus(4, 5);
+
+		document.write(plusSum);
+
+		function plus(x, y) { //정의가 밑에있어도 먼저 활용
+
+			var sum = x + y;
+
+			return sum;
+		}
+
+		//이름이 없는 함수(익명함수) --> 이름이 없어서 바로 사용해야함
+		var minus = function(a, b) {
+			var sum = a - b;
+			return sum;
+		}
+
+		var result03 = minus(5, 4);
+		console.log(result03);
+	</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>객체</h1>
+
+
+	<script type="text/javascript">
+		var name = "오준식";
+
+		var guestbookVo = {
+			name : "오준식",
+			password : "1234",
+			content : "hi",
+			showInfo : function() {
+				console.log(this.name + ", " + this.password + ", "
+						+ this.content)
+			}
+		};
+
+		console.log(guestbookVo.name);
+		console.log(guestbookVo.password);
+		console.log(guestbookVo.content);
+		guestbookVo.showInfo();
+
+		var teacher = guestbookVo.name;
+		console.log(teacher)
+
+		var teacher2 = guestbookVo["name"]
+		console.log(teacher2)
+
+		console.log("================================")
+
+		var person01 = {
+			name : "육준식",
+			hp : "010-2222-1111",
+			company : "02-2222-2222"
+		};
+
+		var person02 = {
+			name : "칠준식",
+			hp : "010-1111-2222",
+			company : "02-3333-3333"
+		};
+
+		var person03 = {
+			name : "팔준식",
+			hp : "010-3333-3333",
+			company : "02-4444-4444"
+		};
+		
+		
+		//var personList = [person01,person02,person03];
+		
+		var personList2 = [];
+		
+		personList2[0] = person01;
+		personList2[1] = person02;
+		personList2.push(person03);
+		
+		console.log(personList2);
+		
+		for(var i=0;i<personList2.length;i++){
+			console.log(personList2[i].name);
+			console.log(personList2[i].hp);
+		}
+	</script>
+
+</body>
+
+
+
+</html>
